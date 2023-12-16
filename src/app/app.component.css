@@ -1,0 +1,318 @@
+
+
+.wrapper {
+    /* width: 90%; вместо фиксированных 375px вместо фиксированных 812px */
+     
+    height: 90vh;  
+    margin: 0 auto;
+    padding: 2% 1vw;
+    /*
+    /* width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 21px 10px;
+    background-color: #000;
+    opacity: 0.85;
+    color: #FFF; */
+    /* width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 21px 10px;
+    background-color: #000;
+    opacity: 0.85;
+    color: #FFF; */
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    /* Добавьте другие стили для устройств с шириной меньше 768px */
+}
+/* header-panel */
+
+.header_panel {
+    font-family: sans-serif;
+    color: #8DA399;
+    padding: 0 20px;
+    /* width: 100%; */
+    height: 30px;
+}
+
+.header_panel_details {
+    float: right;
+}
+
+.cellular {
+    height: 16px;
+    width: 19px;
+    margin: 0 3px; 
+}
+
+.wifi {
+    height: 22px;
+    width: 23px;
+    margin: 0 5px;
+}
+
+.battery {
+    height: 15px;
+    width: 25px;
+    margin: 0 3px;
+}
+
+/* gradie */
+
+.parent_block {
+    position: relative;
+}
+
+.gradient {
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.gradient::after {
+    content: '';
+    position: absolute;
+    width: 300px; 
+    height: 50px; 
+    background: linear-gradient(to right, rgba(0, 128, 0, 0.6), rgba(0, 0, 255, 0.745));
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(30px);
+}
+
+/*user tab*/
+
+.user_tab {
+    height: 25px;
+    position: relative;
+    margin: 0 0 30px 0;
+    color: #fff;
+}
+.user_tab span {
+    font-family: sans-serif;
+    margin: 0 5px;
+}
+
+.nickName {
+    color: #FFF;
+
+    font-family: Sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+
+    top: 0;
+    position: absolute;
+}
+.skrNikName {
+    position: absolute;
+    top: 9px;
+    left: 1px;
+    font-size: 12px;
+    font-family: sans-serif, "Poppins";
+}
+
+
+.avatar_user {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+    cursor : pointer;
+}
+
+.add_friends {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    float: right;
+    transition: transform 0.5s ease;
+}
+
+/*Competitions*/
+
+.Competitions {
+    color: #88949B;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 20px 0;
+}
+
+/*users_Competitions*/
+
+
+.users_Competitions {
+    width: 80%;
+    height: 485px;
+    padding: 20px;
+    border: 0.1px solid #b3aaaa;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #141719;
+    
+}
+
+/*wrapper_panel_header_users*/
+
+
+.wrapper_panel_header_users {
+    position: relative;
+    color: #898B8C;
+    margin: 0 0 20px 0;
+}
+
+.panel_images_users {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.panel_images_users img {
+    border-radius: 50%; 
+    position: absolute;
+    width: 100%;  
+    height: 100%;
+    object-fit: cover;
+}
+
+.panel_images_users img:nth-child(1) {
+    z-index: 1; 
+}
+
+.panel_images_users img:nth-child(2) {
+    z-index: 2;
+    left: 12.5px;
+
+}
+  
+.panel_images_users img:nth-child(3) {
+    z-index: 3; 
+    left: 25px;
+
+}
+  
+.panel_images_users img:nth-child(4) {
+    z-index: 4; 
+    left: 37.5px;
+
+}
+
+.wrapper_panel_header_users span{
+    position: absolute ;
+    top: 0;
+    right: 0;
+    font-family: sans-serif;
+
+}
+
+/* main_text */
+
+.main_text {
+    color: #88949B;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 20px 0;
+}
+
+/* cards_reting */
+
+/* other_details */
+
+.Additional_Information {
+    width: 100%;
+    height: 77px;
+    position: relative;
+    margin: 30px 0 0 0 ;
+}
+
+.private_info {
+    position: absolute;
+    left: 30px;
+    top: 0;
+}
+
+.logo {
+    position: absolute;
+    left: 80px;
+    top: 0;
+}
+
+.infoFirma {
+    position: absolute;
+    left: 110px;
+    top: 0;
+}
+
+.count_days {
+    position: absolute;
+    left: 230px;
+    top: 0;
+}
+
+.text_days {
+    position: absolute;
+    left: 260px;
+    top: 0;
+    color: #FF6F6F;
+
+}
+
+.count_days_number {
+    position: absolute;
+    left: 238px;
+    top: 3px;
+    color: #FF6F6F;
+}
+
+
+.main {
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+.secondary {
+    font-family: sans-serif;
+    font-size: 8px;
+    color: #858788 ;
+}
+
+.view_button {
+    height: 47px;
+    width: 100%;
+    border-radius: 13px;
+    color: #FFF;
+    background-color: #303236;
+    font-family: sans-serif ,'Poppins';
+    font-size: 12px;
+    border: 0.5px solid #838996;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.view_button:hover {
+    transform: scale(1.05);
+}
+
+.nickNameUser:hover {
+    transform: scale(1.05);
+    color: #31C7E7;
+}
+
+.add_friends:hover {
+    transform: scale(1.1);
+
+}

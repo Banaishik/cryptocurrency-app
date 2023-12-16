@@ -1,0 +1,132 @@
+
+.cards_reting {
+    position: relative;
+    height: 77px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: -67px 0px 98px -14px rgba(0, 255, 33, 0.2) inset;
+    color: #FFF;
+    margin: 10px 0;
+}
+
+.cards_reting span {
+    font-family: sans-serif;
+}
+
+.block_color {
+    background: linear-gradient(#58b6b9, #edf1cf);
+    width: 50px;
+    height: 100%;
+    border-bottom-left-radius: 8px;    
+    border-top-left-radius: 8px;    
+
+}
+
+.block_color span {
+    margin: 5px;
+    font-family: sans-serif;
+    font-size: 19px;
+    letter-spacing: 1px;
+    word-spacing: -3.6px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    opacity: 0.2;
+}
+
+.avatar {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 5px;
+    position: absolute;
+    top: 23px;
+    left: 23px;
+
+}
+
+.avatar_background {
+    width: 48px;
+    height: 41px;
+    border-radius: 5px;
+    position: absolute;
+    top: 18px;
+    left: 14px;
+
+}
+
+.nickNameUser {
+    position: absolute;
+    left: 85px;
+    top: 10px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.nickNameUser span {
+    margin: 0 5px;
+}
+
+.count {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.txt_inf {
+    color: #828584;
+    font-size: 10px;
+}
+
+.Alerts {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+}
+
+.Win_rate {
+    position: absolute;
+    top: 40px;
+    left: 125px;
+}
+
+.Yield {
+    position: absolute;
+    top: 40px;
+    left: 175px;
+}
+
+.res_count {
+    float: right;
+}
+
+.result {
+    position: absolute;
+    top: 50%;
+    left: 76%;
+    float: right;
+    margin-left: auto;
+
+
+}
+
+.result_percent {
+    font-size: 10px;
+    position: absolute;
+    top: 70%;
+    /* left: 81.5%; */
+    left: 76%;
+
+    font-family: sans-serif;
+    float: right;
+    margin-left: auto;
+
+}
+
+.nickNameUser:hover {
+    transform: scale(1.05);
+    color: #31C7E7;
+}
+

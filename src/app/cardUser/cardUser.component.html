@@ -1,0 +1,44 @@
+<div class="cards_reting" [style.box-shadow]="user.meaning ? '-67px 0px 98px -14px rgba(0, 255, 33, 0.2) inset' : '-67px 0px 98px -14px rgba(255, 1, 47, 0.2) inset'">
+    <div class="block_color">
+      <span>{{user.place}}st</span>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="avatar_background"><g><linearGradient id="a" x1="5.363" x2="504.823" y1="509.588" y2="10.128" gradientTransform="matrix(1 0 0 -1 0 514.95)" gradientUnits="userSpaceOnUse"><stop stop-opacity="1" stop-color="#1aa3ff" offset="0"></stop><stop stop-opacity="1" stop-color="#ded2b1" offset="0.5231480881892033"></stop></linearGradient><path fill="url(#a)" d="M351.1 25.5H160.9c-23.5 0-45.2 12.6-57 32.9L8.8 223.1a65.764 65.764 0 0 0 0 65.9l95.1 164.7c11.8 20.4 33.5 32.9 57 32.9h190.2c23.5 0 45.2-12.6 57-32.9L503.2 289c11.8-20.4 11.8-45.5 0-65.9l-95-164.7c-11.9-20.4-33.6-32.9-57.1-32.9z" opacity="1" data-original="url(#a)" class=""></path></g></svg>      
+    <img src={{user.img}} class="avatar" alt="user2">
+
+    <div class="nickNameUser">
+      <span>{{user.name}}</span>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M5.89826 0.727209C6.56653 0.286114 7.43347 0.286114 8.10175 0.72721L8.95472 1.29022C9.16759 1.43072 9.40536 1.52921 9.65523 1.58038L10.6565 1.78542C11.4409 1.94605 12.0539 2.55908 12.2146 3.34352L12.4196 4.34477C12.4708 4.59464 12.5693 4.83241 12.7098 5.04528L13.2728 5.89826C13.7139 6.56653 13.7139 7.43347 13.2728 8.10174L12.7098 8.95472C12.5693 9.16759 12.4708 9.40536 12.4196 9.65523L12.2146 10.6565C12.0539 11.4409 11.4409 12.0539 10.6565 12.2146L9.65523 12.4196C9.40536 12.4708 9.16759 12.5693 8.95472 12.7098L8.10174 13.2728C7.43347 13.7139 6.56653 13.7139 5.89825 13.2728L5.04528 12.7098C4.83241 12.5693 4.59464 12.4708 4.34477 12.4196L3.34352 12.2146C2.55908 12.0539 1.94605 11.4409 1.78542 10.6565L1.58038 9.65523C1.52921 9.40536 1.43072 9.16759 1.29022 8.95472L0.727209 8.10174C0.286114 7.43347 0.286114 6.56653 0.727209 5.89825L1.29022 5.04528C1.43072 4.83241 1.52921 4.59464 1.58038 4.34477L1.78542 3.34352C1.94605 2.55908 2.55908 1.94605 3.34352 1.78542L4.34477 1.58038C4.59464 1.52921 4.83241 1.43072 5.04528 1.29022L5.89826 0.727209Z" fill="#00A5EA"/>
+        <path d="M5.95 7.69922L4.55 6.29922L3.5 7.34922L5.95 9.79922L10.5 5.24922L9.45 4.19922L5.95 7.69922Z" fill="white"/>
+      </svg>        
+    </div>
+
+    <div class="info Alerts">
+      <div class="count">{{user.alerts}}</div>
+      <span class="txt_inf" >Alerts</span>
+    </div>
+    
+    <div class="info Win_rate">
+      <div class="count">{{user.winRate}}%</div>
+      <span class="txt_inf">Win Rate</span>
+    </div>
+    
+    <div class="info Yield">
+      <div class="count">{{user.yield}}%</div>
+      <span class="txt_inf">Yield</span>
+    </div>
+
+    <div class="res_count">
+        <div class="count result"  [style.color]="user.meaning ? '#88FFC7' : '#CC1100' ">
+            <span>{{user.meaning ? "+" : "-"}} </span>
+            <span>${{user.result}}</span>
+        </div>
+        
+        <div class="result_percent" [style.color]="user.meaning ? '#88FFC7' : '#CC1100' ">
+        <span>{{user.percent}}%</span>
+        </div>        
+    </div>
+
+</div>
