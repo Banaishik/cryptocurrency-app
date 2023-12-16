@@ -1,42 +1,26 @@
-
-
-.wrapper {
-    /* width: 90%; вместо фиксированных 375px вместо фиксированных 812px */
-     
-    height: 90vh;  
+.wrapper {     
     margin: 0 auto;
     padding: 2% 1vw;
-    /*
-    /* width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 21px 10px;
+    width: 416px;
+    height: 972px;    
     background-color: #000;
-    opacity: 0.85;
-    color: #FFF; */
-    /* width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 21px 10px;
-    background-color: #000;
-    opacity: 0.85;
-    color: #FFF; */
+/* 
+    width: 100%;
+    height: 100%; */
+
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 430px) {
     .wrapper {
-        width: 100%;
-        height: 100%;
+        width: 430px;
+        height: 932px;
     }
-    /* Добавьте другие стили для устройств с шириной меньше 768px */
 }
-/* header-panel */
 
 .header_panel {
     font-family: sans-serif;
     color: #8DA399;
     padding: 0 20px;
-    /* width: 100%; */
     height: 30px;
 }
 
@@ -95,6 +79,7 @@
     margin: 0 0 30px 0;
     color: #fff;
 }
+
 .user_tab span {
     font-family: sans-serif;
     margin: 0 5px;
@@ -151,7 +136,6 @@
 
 /*users_Competitions*/
 
-
 .users_Competitions {
     width: 80%;
     height: 485px;
@@ -193,19 +177,16 @@
 .panel_images_users img:nth-child(2) {
     z-index: 2;
     left: 12.5px;
-
 }
   
 .panel_images_users img:nth-child(3) {
     z-index: 3; 
     left: 25px;
-
 }
   
 .panel_images_users img:nth-child(4) {
     z-index: 4; 
     left: 37.5px;
-
 }
 
 .wrapper_panel_header_users span{
@@ -213,7 +194,6 @@
     top: 0;
     right: 0;
     font-family: sans-serif;
-
 }
 
 /* main_text */
@@ -227,8 +207,6 @@
     line-height: normal;
     margin: 0 0 20px 0;
 }
-
-/* cards_reting */
 
 /* other_details */
 
@@ -290,6 +268,12 @@
     color: #858788 ;
 }
 
+.add {
+    cursor: pointer;
+    margin: 0 0 0 80%;
+    transition: transform 0.5s ease;
+}
+
 .view_button {
     height: 47px;
     width: 100%;
@@ -314,5 +298,8 @@
 
 .add_friends:hover {
     transform: scale(1.1);
+}
 
+.add:hover {
+    transform: scale(1.1);
 }
